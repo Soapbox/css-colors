@@ -1,0 +1,31 @@
+{
+	"name": "SoapBox/css-colors",
+	"description": "Collection of classes for converting and manipulating colors",
+	"homepage": "https://github.com/SoapBox/css-colors",
+	"license": "MIT",
+	"version": "1.0",
+	"keywords": [
+		"color","css", "hex", "manipulation", "shading"
+	],
+	"authors": [
+		{
+			"name": "Graham McCarthy",
+			"homepage": "http://grahammccarthy.com",
+			"email": "graham@soapboxhq.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"illuminate/support": "~4.1",
+		"illuminate/http": "~4.1",
+		"illuminate/validation": "~4.1"
+	},
+	"require-dev": {},
+	"autoload": {
+		"psr-0": {
+			"SoapBox\\Csscolor\\": "src/",
+			"SoapBox\\Csscolor\\Tests\\": "tests/"
+		}
+	},
+	"minimum-stability": "dev"
+}
