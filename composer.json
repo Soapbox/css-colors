@@ -1,11 +1,11 @@
 {
 	"name": "soapbox/css-colors",
-	"description": "Collection of classes for converting and manipulating colors",
+	"description": "A package that takes in a color hex and returns potential foreground colours and background colour variations. Very useful for creating CSS gradients and dynamically figuring out foreground colour.",
 	"homepage": "https://github.com/SoapBox/css-colors",
 	"license": "MIT",
 	"version": "1.0",
 	"keywords": [
-		"color","css", "hex", "manipulation", "shading"
+		"color","css", "hex", "manipulation", "shading", "gradient", "foreground", "background"
 	],
 	"authors": [
 		{
