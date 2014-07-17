@@ -52,12 +52,12 @@ class Csscolor {
   //==================================================
   //==CONSTRUCTOR=====================================
   //==================================================
-  public static function make($bgHex, $fgHex='') 
+  public static function make($bgHex= '', $fgHex='') 
   {
     return new self($bgHex, $fgHex);
   }
 
-  public function __construct($bgHex, $fgHex='') {
+  public function __construct($bgHex='', $fgHex='') {
     // This is the constructor method for the class,
     // which is called when a new object is created.
 
@@ -68,7 +68,7 @@ class Csscolor {
     // Initialize the palette
     $this->setPalette($bgHex, $fgHex);
   }
-  
+
 /*
   function Csscolor($bgHex, $fgHex='') {
     // This is the constructor method for the class,
@@ -88,7 +88,7 @@ class Csscolor {
   //==================================================
 
   //--------------------------------------------------
-  function setPalette($bgHex, $fgHex = '')
+  function setPalette($bgHex='', $fgHex = '')
   {
     // Initialize the color palettes
 
