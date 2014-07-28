@@ -32,7 +32,7 @@ class CsscolorServiceProvider extends ServiceProvider {
 
 		$this->app->booting(function() {
 			$loader = \Illuminate\Foundation\AliasLoader::getInstance();
-			$loader->alias('Csscolor', 'SoapBox\Csscolor\Facade');
+			$loader->alias('Csscolor', 'SoapBox\Csscolor\CsscolorFacade');
 		});
 	}
 
