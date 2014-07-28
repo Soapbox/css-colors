@@ -1,8 +1,8 @@
-<?php 
+<?php namespace SoapBox\Csscolor\Tests;
 
 use SoapBox\Csscolor\Csscolor;
 
-class ColorTest extends PHPUnit_Framework_TestCase {
+class ColorTest extends \PHPUnit_Framework_TestCase {
 
 	public function setUp() {
 		parent::setUp();
