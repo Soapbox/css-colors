@@ -12,7 +12,7 @@ It takes a great php class made by Patrick Fitzgerald in 2004 ( http://www.barel
 Install this package through Composer. Add the following to your composer.json file:
 ```php
 "require": {
-    "soapbox/css-color": "dev-master"
+    "soapbox/css-colors": "dev-master"
 }
 ```
 Next, run composer install
