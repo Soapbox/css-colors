@@ -26,7 +26,7 @@ Finally, add the service provider and the facade to app/config/app.php.
 )
 
 
-Not requred, but you can addd the Csscolor alias if you want.
+Not required, but you can addd the Csscolor alias if you want.
 
 'aliases' => array(
     // ...
