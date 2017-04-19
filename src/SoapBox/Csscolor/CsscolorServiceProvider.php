@@ -17,7 +17,12 @@ class CsscolorServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
-		$this->package('SoapBox/Csscolor');
+		/**
+	         * If the package method exists, we're using Laravel 4
+        	 */
+	        if (method_exists($this, 'package')) {
+        	    $this->package('SoapBox/Csscolor');
+	        }
 	}
 
 	/**
