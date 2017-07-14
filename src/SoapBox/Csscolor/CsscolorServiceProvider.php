@@ -31,10 +31,10 @@ class CsscolorServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->app['csscolor'] = $this->app->share(function($app) {
-			return new Csscolor;
+		$this->app['csscolor'] = $this->app->singleton('foo', function () {
+		    return new Csscolor;
 		});
-
+		
 		$this->app->booting(function() {
 			$loader = \Illuminate\Foundation\AliasLoader::getInstance();
 			$loader->alias('Csscolor', 'SoapBox\Csscolor\CsscolorFacade');
