@@ -12,23 +12,14 @@ class CsscolorServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	/**
-	 * Bootstrap the application events.
-	 *
-	 * @return void
-	 */
-	public function boot() {
-		$this->package('SoapBox/Csscolor');
-	}
-
-	/**
 	 * Register the service provider.
 	 *
 	 * @return void
 	 */
 	public function register() {
-		$this->app['csscolor'] = $this->app->share(function($app) {
-			return new Csscolor;
-		});
+		$this->app->singleton('csscolor', function ($app) {
+		             return new Csscolor;
+		         });
 
 		$this->app->booting(function() {
 			$loader = \Illuminate\Foundation\AliasLoader::getInstance();
