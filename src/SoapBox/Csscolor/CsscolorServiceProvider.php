@@ -11,8 +11,6 @@ class CsscolorServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
-	
-
 	/**
 	 * Register the service provider.
 	 *
